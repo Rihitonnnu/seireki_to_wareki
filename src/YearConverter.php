@@ -27,7 +27,7 @@ class YearConverter implements YearConverterInterface
 
     public function warekiToSeireki(string $wareki): int
     {
-        if (preg_match('/^(令和|平成|昭和|大正|明治)(\d+)年$/u', $wareki, $matches)) {
+        if (preg_match('/^(令和|平成|昭和|大正|明治)([1-9]\d*)年$/u', $wareki, $matches)) {
             $era = $matches[1];
             $year = (int)$matches[2];
 
