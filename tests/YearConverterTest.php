@@ -24,7 +24,6 @@ class YearConverterTest extends TestCase
     #[Test]
     public function 和暦から西暦への変換が正しく行われること()
     {
-        $yearConverter = new YearConverter();
         $this->assertEquals(2023, $this->yearConverter->warekiToSeireki('令和5年'));
     }
 }
